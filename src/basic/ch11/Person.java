@@ -46,4 +46,9 @@ public class Person {
 		System.out.println("이름 : " + name + ", 나이 : " + age);
 	}
 	
+	// setter
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 }
