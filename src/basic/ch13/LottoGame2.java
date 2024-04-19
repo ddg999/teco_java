@@ -28,12 +28,6 @@ public class LottoGame2 {
 		// 수식을 작성해주세요
 		// 만약 if --> 반복문 사용 금지 if문 6개로 구성해주세요
 
-		gameNumber1 = 6;
-		gameNumber2 = 5;
-		gameNumber3 = 4;
-		gameNumber4 = 3;
-		gameNumber5 = 2;
-		gameNumber6 = 1;
 		int tempBox = 0;
 
 		
