@@ -45,15 +45,7 @@ public class LottoGame3 {
 		System.out.println();
 		System.out.println("-------------------------------------------");
 
-//		System.out.print(gameNumber1 + "\t");
-//		System.out.print(gameNumber2 + "\t");
-//		System.out.print(gameNumber3 + "\t");
-//		System.out.print(gameNumber4 + "\t");
-//		System.out.print(gameNumber5 + "\t");
-//		System.out.print(gameNumber6 + "\t");
-//		System.out.println();
-//		System.out.println("----------------------------------------------");
-//
+		// 오름차순
 //		for (int i = 1; i <= 5; i++) {
 //			if (gameNumber1 > gameNumber2) {
 //				int tempBox = gameNumber1;
@@ -91,6 +83,7 @@ public class LottoGame3 {
 //		System.out.println();
 //		System.out.println("----------------------------------------------");
 //
+		// (붙어있는 숫자끼리) 중복제거 --> 오름차순 두 번 써야함
 //		for (int i = 1; i <= 5; i++) {
 //			while (gameNumber1 == gameNumber2) {
 //				gameNumber2 = LottoNumberMaker.makeNumber();
