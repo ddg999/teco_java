@@ -31,7 +31,7 @@ public class LottoGame2 {
 		int tempBox = 0;
 
 		
-		// 가장 큰 숫자를 제일 뒤로 보내는 코드-> 6개 숫자니까 ㅋ5번 반복 
+		// 가장 큰 숫자를 제일 뒤로 보내는 코드-> 6개 숫자니까 5번 반복 
 		for (int i = 0; i < 5; i++) {
 			if (gameNumber1 > gameNumber2) {
 				tempBox = gameNumber1;
