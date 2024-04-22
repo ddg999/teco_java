@@ -102,6 +102,7 @@ public class MyBookStore {
 		System.out.println("책이 저장 되었습니다");
 	}
 
+	// 선택 조회
 	public static void readByTitle(Scanner sc, Book[] books) {
 		System.out.println("----- 선택 조회하기 -----");
 		System.out.println(">> 책 제목을 입력해주세요 <<<");

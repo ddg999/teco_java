@@ -1,5 +1,7 @@
 package basic.ch13;
 
+import java.util.Arrays;
+
 public class LottoGame3 {
 
 	public static void main(String[] args) {
@@ -12,6 +14,18 @@ public class LottoGame3 {
 		int gameNumber5 = LottoNumberMaker.makeNumber();
 		int gameNumber6 = LottoNumberMaker.makeNumber();
 
+		int[] lottos = LottoNumberMaker.makeNumbers();
+		Arrays.sort(lottos); // 오름차순
+		
+		System.out.print(lottos[0] + "\t");
+		System.out.print(lottos[1] + "\t");
+		System.out.print(lottos[2] + "\t");
+		System.out.print(lottos[3] + "\t");
+		System.out.print(lottos[4] + "\t");
+		System.out.print(lottos[5] + "\t");
+		System.out.println();
+		System.out.println("-------------------------------------------");
+		
 		// 출력
 		System.out.print(gameNumber1 + "\t");
 		System.out.print(gameNumber2 + "\t");
