@@ -7,7 +7,7 @@ public class PhoneBookManager {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		PhoneBook[] phonebook = new PhoneBook[5];
+		PhoneBook[] phonebook = new PhoneBook[100];
 
 		final String SAVE = "1";
 		final String SEARCH_ALL = "2";
