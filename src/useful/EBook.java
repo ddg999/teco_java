@@ -26,13 +26,12 @@ public class EBook {
 		if (obj instanceof EBook) {
 			EBook tBook = (EBook) obj;
 			// 2. EBook의 제목과 저자의 이름이 같다면 true 반환시켜라
-			if (this.title.equals(tBook.title)) {
+			if (this.title.equals(tBook.title) && this.author.equals(tBook.author)) {
 				return true;
 			} else {
 				return false;
 			}
 		}
-
 		return false;
 	}
 
