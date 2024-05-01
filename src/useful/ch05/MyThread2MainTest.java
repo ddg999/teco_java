@@ -12,6 +12,8 @@ public class MyThread2MainTest {
 		// Thread 안에 있는 start() 메서드를 호출해야 한다.
 		Thread th1 = new Thread(myThread2);
 		// 그 안에 정의된 run() 메서드를 호출하시오
+		
+		
 		th1.start();
 
 		// 힌트 --> Thread 문서를 반드시 확인하시오
