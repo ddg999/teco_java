@@ -115,16 +115,16 @@ public class TencoIntArray {
 			System.out.println("삭제할 요소가 없습니다");
 			return;
 		}
+		System.out.println("Log 2 : " + count);
 		// 인덱스 범위를 잘못 지정했다면 방어적 코드
 		if (position < 0 || position >= count) {
 			System.out.println("잘못된 요청입니다.");
 			return;
 		}
-
 		for (int i = position; i < count; i++) {
+			System.out.println("Log 3 : " + i);
 			intArr[i] = intArr[i + 1];
 		}
 		intArr[count--] = 0;
 	}
-
 }
