@@ -10,7 +10,7 @@ public class BufferedFileCopy {
 		// 기반 스트림 + 보조 스트림을 활용해서 파일 복사 기능을 만들고
 		// 소요 시간을 측정하시오
 		String sourceFilePath = "C:\\Users\\GGG\\Documents\\Lightshot\\a.zip";
-		String destinationFilePath = "copy2.zip";
+		String destinationFilePath = "copy3.zip";
 
 		long startTime = System.nanoTime();
 
@@ -18,8 +18,6 @@ public class BufferedFileCopy {
 				BufferedInputStream bis = new BufferedInputStream(fis);
 				FileOutputStream fos = new FileOutputStream(destinationFilePath)) {
 
-			byte[] bytes = sourceFilePath.getBytes();
-			bis.read(bytes);
 			int data;
 			while ((data = bis.read()) != -1) {
 				// 파일에 출력
@@ -27,10 +25,8 @@ public class BufferedFileCopy {
 			}
 			bis.close();
 
-		} catch (
-
-		Exception e) {
-
+		} catch (Exception e) {
+			e.printStackTrace(); // 파일 저장 기능도 가능
 		}
 
 		long endTime = System.nanoTime();
