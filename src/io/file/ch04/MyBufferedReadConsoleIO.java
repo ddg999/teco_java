@@ -9,7 +9,8 @@ public class MyBufferedReadConsoleIO {
 
 		// 문자 기반 스트림 + 보조 문자 기반 스트림을 사용한다 !!
 
-		try (InputStreamReader isr = new InputStreamReader(System.in); BufferedReader br = new BufferedReader(isr)) {
+		try (InputStreamReader isr = new InputStreamReader(System.in);
+				BufferedReader br = new BufferedReader(isr)) {
 
 			// isr -> 한 문자씩 읽는 기능 read() 를 가지고 있었다.
 			// br -> 한번에 한 라인씩 읽을 수 있는 기능을 가지고 있다.

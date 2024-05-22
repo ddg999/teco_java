@@ -19,7 +19,8 @@ public class StandardInputExample {
 		System.out.println("여러 줄의 텍스트를 입력하세요");
 		System.out.println("더 많은 텍스트를 입력하세요 (한줄 단위) -> 엔터");
 
-		try (InputStreamReader isr = new InputStreamReader(System.in); BufferedReader br = new BufferedReader(isr)) {
+		try (InputStreamReader isr = new InputStreamReader(System.in);
+				BufferedReader br = new BufferedReader(isr)) {
 			// <-- 종료
 			// isr.read(); 의 기능 확장인
 			String line;

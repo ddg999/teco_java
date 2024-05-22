@@ -1,6 +1,7 @@
 package io.file.ch03;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -15,15 +16,16 @@ public class BufferedFileCopy {
 		long startTime = System.nanoTime();
 
 		try (FileInputStream fis = new FileInputStream(sourceFilePath);
+				FileOutputStream fos = new FileOutputStream(destinationFilePath);
 				BufferedInputStream bis = new BufferedInputStream(fis);
-				FileOutputStream fos = new FileOutputStream(destinationFilePath)) {
+				BufferedOutputStream bos = new BufferedOutputStream(fos)) {
 
 			int data;
 			while ((data = bis.read()) != -1) {
 				// 파일에 출력
-				fos.write(data);
+				bos.write(data);
 			}
-			bis.close();
+			bos.flush();
 
 		} catch (Exception e) {
 			e.printStackTrace(); // 파일 저장 기능도 가능

@@ -16,9 +16,9 @@ public class MyFileInputStream {
 			// 1단계
 //			int readData = in.read();
 			// 2단계
-//			System.out.println((char)in.read());
-//			System.out.println((char)in.read());
-//			System.out.println((char)in.read());
+//			System.out.println((char) in.read());
+//			System.out.println((char) in.read());
+//			System.out.println((char) in.read());
 
 			// 3단계
 			// 읽을 데이터가 더 이상 없다면 -1을 반환한다.
